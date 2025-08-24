@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointments Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="medical-bg"></div>
+    <div class="main-wrapper">
+        <div class="centered-box full-width">
+            <div class="title-box full-width" tabindex="0">
+                <img src="/static/logo_image.jpg" alt="Logo" class="logo">
+                <div class="title-texts">
+                    <h1>Doctor Appointments Agent</h1>
+                    <div class="subtitle">Your AI-powered assistant for booking, managing, and exploring doctor appointments. Register doctors, patients, specializations, and availability, or ask anything about schedules!</div>
+                </div>
+            </div>
+            <div class="container full-width chat-container">
+                <div id="chat-history"></div>
+                <form id="query-form" autocomplete="off">
+                    <input type="text" id="user-query" placeholder="Book appointments, register doctors/patients/specializations/availability, or ask questions..." required autocomplete="off">
+                    <button type="submit">Ask</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

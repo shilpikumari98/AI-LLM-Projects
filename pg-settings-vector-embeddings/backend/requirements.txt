@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic
+sentence-transformers
+pytest
+httpx
+pgvector
+# gpt4all
+transformers
+torch
+tiktoken 
+protobuf
+spaCy
+rapidfuzz
+rank_bm25
+typing
+
+# python -m spacy download en_core_web_sm

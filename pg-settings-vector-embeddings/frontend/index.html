@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PostgreSQL AI Tuning Insights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <i class="fas fa-database logo"></i>
+      <div class="header-text">
+        <h1>PostgreSQL AI Tuning Insights</h1>
+        <p>Instant recommendations for smarter database configuration <i class="fa-solid fa-lightbulb"></i></p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Search -->
+    <section class="search-section">
+      <input id="search-input" type="search" placeholder="Ask anything about PostgreSQL settings..." />
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+    </section>
+
+    <!-- Search Results -->
+    <section class="search-result-section">
+      <pre id="search-results" class="search-results"></pre>
+    </section>
+
+    <!-- Settings Table -->
+    <section class="settings-section">
+      <h2><i class="fa-solid fa-sliders"></i> Configuration Parameters</h2>
+      <p>Explore PostgreSQL settings and get expert tuning advice with a click.</p>
+      <div class="table-wrapper">
+        <!-- Table will be injected dynamically by JS -->
+        <div id="settings-table"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="insight-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="insight-close" class="close" aria-label="Close dialog">&times;</button>
+      <h2 id="modal-title"><i class="fa-solid fa-circle-info"></i> AI Recommendation</h2>
+      <div id="insight-content" tabindex="0" class="modal-text"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span>Made with <i class="fas fa-heart"></i> for database pros · 2025</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/static/app.js"></script>
+</body>
+</html>

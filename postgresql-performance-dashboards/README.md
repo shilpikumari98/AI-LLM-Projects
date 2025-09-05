@@ -25,8 +25,4 @@
    ```
 
 ---
-## 🧑‍💻 Author
 
-Built by the PostgreSQL Team
-
----
